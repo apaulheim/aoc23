@@ -29,7 +29,7 @@ export default function Home() {
           </div>
           <div
             class="day"
-            style={`background: url(${image});background-size: contain; background-repeat: no-repeat;`}
+            style={`background: url(${image});background-size: contain; background-repeat: no-repeat; background-position: center;`}
           >
           </div>
           <div class="solutions">
