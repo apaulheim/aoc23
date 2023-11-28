@@ -8,7 +8,7 @@ export default function DayPage(props: PageProps) {
   return (
     <>
       <Head>
-        <title>Annis AOC22</title>
+        <title>Annis AOC23</title>
         <link rel="stylesheet" href={asset("/global.css")} />
       </Head>
       <main class="container-day">

@@ -16,7 +16,6 @@ body {
   height: 100vh;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
   background-size: cover;
 }
@@ -24,6 +23,7 @@ body {
   color: #4e6eaa;
   font-size: 3em;
   padding-bottom: 0.5em;
+  margin-top:1em;
   /* -webkit-text-stroke: 3px #2e446d; */
 }
 .calendar {

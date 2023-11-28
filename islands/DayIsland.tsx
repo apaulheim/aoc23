@@ -44,7 +44,7 @@ export default function DayIsland({ dayNr }: DayIslandProps) {
           frameBorder="0"
           width="800px"
           height="500px"
-          srcDoc={`<html><body><script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fapaulheim%2Faoc22code%2Fblob%2Fmain%2F${
+          srcDoc={`<html><body><script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fapaulheim%2Faoc23code%2Fblob%2Fmain%2F${
             languages[selectedLang]
           }%2Fday${dayNr}.${
             languages[selectedLang]
@@ -59,7 +59,7 @@ export default function DayIsland({ dayNr }: DayIslandProps) {
     if (selectedLang >= 0) {
       return (
         <a
-          href={`https://replit.com/@apaulheim/aoc22day${dayNr}${
+          href={`https://replit.com/@apaulheim/aoc23day${dayNr}${
             languages[selectedLang]
           }`}
           target="blank"
