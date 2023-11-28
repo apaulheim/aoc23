@@ -117,6 +117,12 @@ export default function DayIsland({ dayNr }: DayIslandProps) {
         </a>
       </div>
       <div class="day-title">Day {dayNr}</div>
+      <div class="day-aoc">
+        <a href={`https://adventofcode.com/2023/day/${dayNr}`}>
+          <img class="aoc" src="../../aoc.png" />
+          <div>{"Go to puzzle"}</div>
+        </a>
+      </div>
       <div class="solutions day">
         {renderSolutions(dayNr)}
       </div>

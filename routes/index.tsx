@@ -8,6 +8,19 @@ import {
 import { MiniPresent, MiniPresentType } from "../components/MiniPresent.tsx";
 
 export default function Home() {
+  const today = new Date();
+
+  const randomize = () => {
+    let ret = [];
+    for (let i = 0; i < 25; i++) {
+      ret.push(i);
+    }
+    ret.sort(() => (Math.random() > .5) ? 1 : -1);
+    return ret;
+  };
+
+  const randomizedDays = randomize();
+
   const renderSolutions = (dayNr: number) => {
     if (solutions[dayNr]) {
       return solutions[dayNr].map((solution) => (
@@ -29,7 +42,15 @@ export default function Home() {
           </div>
           <div
             class="day"
-            style={`background: url(${image});background-size: contain; background-repeat: no-repeat; background-position: center;`}
+            style={`background: url(${image});background-size: contain; background-repeat: no-repeat; background-position: center; filter: grayscale(${
+              today.getMonth() == 11 && today.getDate() >= dayNr + 1
+                ? "0%"
+                : "95%"
+            }); opacity: ${
+              today.getMonth() == 11 && today.getDate() >= dayNr + 1
+                ? "1"
+                : "0.2"
+            }`}
           >
           </div>
           <div class="solutions">
@@ -53,21 +74,17 @@ export default function Home() {
           <div class="main-title">
             Anni's AOC 2023
           </div>
-          <a href="https://github.com/apaulheim/aoc23" target="_blank">
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-            >
-              <path
-                fill="white"
-                d="m23 9v6h-1v2h-1v2h-1v1h-1v1h-1v1h-2v1h-1v-5h-1v-1h1v-1h2v-1h1v-1h1v-5h-1v-3h-2v1h-1v1h-1v-1h-4v1h-1v-1h-1v-1h-2v3h-1v5h1v1h1v1h2v2h-2v-1h-1v-1h-2v1h1v2h1v1h3v3h-1v-1h-2v-1h-1v-1h-1v-1h-1v-2h-1v-2h-1v-6h1v-2h1v-2h1v-1h1v-1h2v-1h2v-1h6v1h2v1h2v1h1v1h1v2h1v2z"
-              />
-            </svg>
-          </a>
+          <div>
+            <a href="https://adventofcode.com/2023" target="_blank">
+              <img src="./aoc.png" />
+            </a>
+            <a href="https://github.com/apaulheim/aoc23code" target="_blank">
+              <img src="./github.png" />
+            </a>
+          </div>
         </div>
         <div class="calendar">
-          {imagesPng.map((image, index) => renderDay(image, index))}
+          {randomizedDays.map((index) => renderDay(imagesPng[index], index))}
         </div>
       </div>
     </>
