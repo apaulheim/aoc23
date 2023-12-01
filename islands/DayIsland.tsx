@@ -5,6 +5,7 @@ import {
   Language,
   languages,
   solutions,
+  titles,
 } from "../components/Data.ts";
 import { MiniPresent } from "../components/MiniPresent.tsx";
 import { MiniPresentType } from "../components/MiniPresent.tsx";
@@ -109,6 +110,13 @@ export default function DayIsland({ dayNr }: DayIslandProps) {
     } else return <div class="no-solution">No solutions implemented yet</div>;
   };
 
+  const renderTitle = (dayNr: number) => {
+    let ret = `Day ${dayNr}`;
+    if (titles.length >= dayNr && titles[dayNr - 1]?.length > 0) {
+      return `${ret}: ${titles[dayNr - 1]}`;
+    } else return ret;
+  };
+
   return (
     <>
       <div class="navbar-container">
@@ -116,7 +124,7 @@ export default function DayIsland({ dayNr }: DayIslandProps) {
           {"\< Back to calendar"}
         </a>
       </div>
-      <div class="day-title">Day {dayNr}</div>
+      <div class="day-title">{renderTitle(dayNr)}</div>
       <div class="day-aoc">
         <a href={`https://adventofcode.com/2023/day/${dayNr}`}>
           <img class="aoc" src="../../aoc.png" />
