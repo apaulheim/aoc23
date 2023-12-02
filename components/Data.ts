@@ -9,7 +9,7 @@ export const languages = ["js", "py", "rs", "go"];
 
 export const solutions = [
   [Language.JS],
-  [],
+  [Language.JS],
   [],
   [],
   [], // Day 5
@@ -32,6 +32,7 @@ export const solutions = [
 
 export const titles = [
   "Trebuchet?!",
+  "Cube Conundrum",
 ];
 
 export const languageColors = [[89, 63, 78, 90], [44, 75, 78, 90], [
