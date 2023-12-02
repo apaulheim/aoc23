@@ -3,13 +3,14 @@ export enum Language {
   PY,
   RS,
   GO,
+  RB,
 }
 
-export const languages = ["js", "py", "rs", "go"];
+export const languages = ["js", "py", "rs", "go", "rb"];
 
 export const solutions = [
   [Language.JS],
-  [Language.JS],
+  [Language.JS, Language.RB],
   [],
   [],
   [], // Day 5
@@ -45,7 +46,7 @@ export const languageColors = [[89, 63, 78, 90], [44, 75, 78, 90], [
   54,
   78,
   90,
-]];
+], [175, 11, 0, 90]];
 
 export const colors = [
   "#aed1d3", // blau
