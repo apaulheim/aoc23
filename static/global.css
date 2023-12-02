@@ -189,6 +189,7 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .minipresent-lang {
 
@@ -208,6 +209,10 @@ iframe {
 .minipresent.go {
   border: 5px solid blue;
   color: blue;
+}
+.minipresent.rb {
+  border: 5px solid #AF0B00;
+  color: #AF0B00;
 }
 .minipresent.js path {
   fill: hsl(89, 63%, 50%);
