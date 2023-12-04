@@ -12,7 +12,7 @@ export const solutions = [
   [Language.JS],
   [Language.JS, Language.RB],
   [Language.JS],
-  [],
+  [Language.JS],
   [], // Day 5
   [],
   [],
@@ -35,6 +35,7 @@ export const titles = [
   "Trebuchet?!",
   "Cube Conundrum",
   "Gear Ratios",
+  "Scratchcards",
 ];
 
 export const languageColors = [[89, 63, 78, 90], [44, 75, 78, 90], [
