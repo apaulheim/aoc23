@@ -13,7 +13,7 @@ export const solutions = [
   [Language.JS, Language.RB],
   [Language.JS],
   [Language.JS],
-  [], // Day 5
+  [Language.JS], // Day 5
   [],
   [],
   [],
@@ -36,6 +36,7 @@ export const titles = [
   "Cube Conundrum",
   "Gear Ratios",
   "Scratchcards",
+  "If You Give A Seed A Fertilizer",
 ];
 
 export const languageColors = [[89, 63, 78, 90], [44, 75, 78, 90], [
