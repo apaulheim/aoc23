@@ -14,7 +14,7 @@ export const solutions = [
   [Language.JS],
   [Language.JS],
   [Language.JS], // Day 5
-  [],
+  [Language.JS],
   [],
   [],
   [],
@@ -37,6 +37,7 @@ export const titles = [
   "Gear Ratios",
   "Scratchcards",
   "If You Give A Seed A Fertilizer",
+  "Wait For It",
 ];
 
 export const languageColors = [[89, 63, 78, 90], [44, 75, 78, 90], [
