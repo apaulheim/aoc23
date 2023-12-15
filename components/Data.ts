@@ -23,7 +23,7 @@ export const solutions = [
   [],
   [],
   [],
-  [], // Day 15
+  [Language.JS], // Day 15
   [],
   [],
   [],
@@ -43,6 +43,10 @@ export const titles = [
   "Mirage Maintenance",
   "Pipe Maze",
   "Cosmic Expansion",
+  "Hot Springs",
+  "Point of Incidence",
+  "Parabolic Reflector Dish",
+  "Lens Library",
 ];
 
 export const languageColors = [[89, 63, 78, 90], [44, 75, 78, 90], [
