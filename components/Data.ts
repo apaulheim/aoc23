@@ -26,8 +26,8 @@ export const solutions = [
   [Language.JS], // Day 15
   [],
   [],
-  [],
-  [],
+  [Language.JS],
+  [Language.JS],
   [], // Day 20
 ];
 
@@ -47,6 +47,10 @@ export const titles = [
   "Point of Incidence",
   "Parabolic Reflector Dish",
   "Lens Library",
+  "The Floor Will Be Lava",
+  "Clumsy Crucible",
+  "Lavaduct Lagoon",
+  "Aplenty",
 ];
 
 export const languageColors = [[89, 63, 78, 90], [44, 75, 78, 90], [
