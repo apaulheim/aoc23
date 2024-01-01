@@ -29,6 +29,11 @@ export const solutions = [
   [Language.JS],
   [Language.JS],
   [], // Day 20
+  [],
+  [],
+  [],
+  [],
+  [], // Day 25
 ];
 
 export const titles = [
@@ -51,6 +56,12 @@ export const titles = [
   "Clumsy Crucible",
   "Lavaduct Lagoon",
   "Aplenty",
+  "Pulse Propagation",
+  "Step Counter",
+  "Sand Slabs",
+  "A Long Walk",
+  "Never Tell Me The Odds",
+  "Snowverload"
 ];
 
 export const languageColors = [[89, 63, 78, 90], [44, 75, 78, 90], [

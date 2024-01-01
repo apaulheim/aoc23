@@ -43,11 +43,11 @@ export default function Home() {
           <div
             class="day"
             style={`background: url(${image});background-size: contain; background-repeat: no-repeat; background-position: center; filter: grayscale(${
-              today.getMonth() == 11 && today.getDate() >= dayNr + 1
+              (today.getFullYear() == 2023 && today.getMonth() == 11 && today.getDate() >= dayNr + 1) || today.getFullYear() > 2023
                 ? "0%"
                 : "95%"
             }); opacity: ${
-              today.getMonth() == 11 && today.getDate() >= dayNr + 1
+              (today.getFullYear() == 2023 && today.getMonth() == 11 && today.getDate() >= dayNr + 1) || today.getFullYear() > 2023
                 ? "1"
                 : "0.2"
             }`}
